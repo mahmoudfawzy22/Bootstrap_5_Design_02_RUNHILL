@@ -6,6 +6,16 @@ const projectImg = document.querySelector(".project .img-content img");
 const leftRowProject = document.querySelector(".project .img-content .left-row");
 const rightRowProject = document.querySelector(".project .img-content .right-row");
 
+const EL_video = document.querySelector("#video");
+const EL_play = document.querySelector(".play-icon");
+
+EL_play.addEventListener("click", () => {
+  const isPaused = EL_video.paused;
+  EL_video[isPaused ? "play" : "pause"]();
+  EL_video.classList.toggle("u-none", !isPaused);
+});
+
+playVideo();
 const imgs = [
   "http://127.0.0.1:5500/imgs/project-slide1.jpg",
   "http://127.0.0.1:5500/imgs/project-slide2.jpg",

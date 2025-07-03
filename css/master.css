@@ -5,8 +5,8 @@
 * {
   box-sizing: border-box;
 }
-.header{
-    background-color: #fff;
+.header {
+  background-color: #fff;
 }
 .contact-us {
   background-color: #1e2126;
@@ -88,6 +88,10 @@
   background-image: url('../imgs/blog-bg-2.jpg');
 }
 
+.subscribe{
+  overflow: hidden;
+}
+
 .box.slide-3 {
   background-image: url('../imgs/blog-bg-3.jpg');
 }
@@ -149,14 +153,158 @@
 }
 
 .text-start {
-    text-align: center !important;
+  text-align: center !important;
 }
 
-.choise h3::after{
-    content: " ";
-    display: block;
-    border-bottom: solid 4px var(--main-color);
-    width: 200px;
-    height: 4px;
-    margin-top: 20px;
+.choise h3::after {
+  content: ' ';
+  display: block;
+  border-bottom: solid 4px var(--main-color);
+  width: 200px;
+  height: 4px;
+  margin-top: 20px;
+}
+
+.box-heart .heart-icon {
+  background-color: var(--main-color);
+  padding: 8px 15px;
+  border-radius: 50%;
+}
+
+.box-heart .heart-icon i {
+  color: #fff;
+}
+
+.video h1 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.video .play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.video .play-icon:hover {
+  background-color: var(--main-color);
+}
+.video .play-icon:hover i {
+  color: #fff;
+}
+.video .play-icon i {
+  font-size: 55px;
+  color: var(--main-color);
+}
+
+#video {
+  height: 60%;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.u-none {
+  display: none;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box-clari img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.clarifications h1::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+  height: 4px;
+  background-color: var(--main-color);
+}
+
+.subscribe-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.subscribe-content .input-box input{
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.subscribe-content .input-box input:focus{
+  outline:  none;
+}
+
+.subscribe-content .input-box input::placeholder{
+  font-size: 20px;
+}
+
+.last-news .content{
+  background-color: #eeeeee;
+}
+
+.last-news h3::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 160px;
+  height: 4px;
+  background-color: var(--main-color);
+}
+
+footer{
+  background-color: #071c33;
+}
+
+footer .box-posts img{
+  height: 55px;
+}
+
+footer .box-posts{
+  border-bottom: 1px solid #ddd;
+}
+
+.subscribe-btn{
+  padding: 0.5rem 1rem;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  border: none;
+  bottom: 1px;
+}
+
+.input-box-footer input
+{
+  border-radius: 20px;
+}
+
+.copyright{
+  bottom: 0;
+  background-color: #04101e;
 }
