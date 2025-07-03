@@ -105,50 +105,55 @@
     </nav>
 
     <!-- Features Slider -->
-    <section class="features position-relative">
-      <div class="left-row position-absolute">
+    <section class="features position-relative overflow-hidden">
+      <div class="left-row position-absolute z-3">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
+      <div class="slider-track d-flex transition">
+        <div class="box position-relative">
+          <img src="imgs/slide-bg-1.jpg" alt="" />
+          <div class="box-text w-50 position-absolute">
+            <h2 class="fs-1 text-white">
+              Simple HTML Template for Strong Constructions
+            </h2>
+            <p class="fs-4 text-white">
+              We strive to make our clients' dreams come true by combining their
+              ideas, lifestyle, and budget with our own expertise.
+            </p>
+            <button class="btn btn-warning">Request a Quote</button>
+          </div>
+        </div>
 
-      <div class="box position-relative active">
-        <div class="box-text w-50 position-absolute">
-          <h2 class="fs-1 text-white">
-            Simple HTML Template for Strong Constructions
-          </h2>
-          <p class="fs-4 text-white">
-            We strive to make our clients' dreams come true by combining their
-            ideas, lifestyle, and budget with our own expertise.
-          </p>
-          <button class="btn btn-warning">Request a Quote</button>
+        <div class="box position-relative">
+          <img src="imgs/slide-bg-3.jpg" alt="" />
+          <div class="box-text w-50 position-absolute">
+            <h2 class="fs-1 text-white">
+              Creative Design for Construction Projects
+            </h2>
+            <p class="fs-4 text-white">
+              We bring structure and innovation together to deliver excellence
+              in every build.
+            </p>
+            <button class="btn btn-warning">Request a Quote</button>
+          </div>
+        </div>
+
+        <div class="box position-relative">
+          <img src="imgs/slide-bg-2.jpg" alt="" />
+          <div class="box-text w-50 position-absolute">
+            <h2 class="fs-1 text-white">
+              Engineering the Future with Confidence
+            </h2>
+            <p class="fs-4 text-white">
+              Our focus is on safe, sustainable, and smart construction
+              services.
+            </p>
+            <button class="btn btn-warning">Request a Quote</button>
+          </div>
         </div>
       </div>
 
-      <div class="box position-relative slide-2">
-        <div class="box-text w-50 position-absolute">
-          <h2 class="fs-1 text-white">
-            Creative Design for Construction Projects
-          </h2>
-          <p class="fs-4 text-white">
-            We bring structure and innovation together to deliver excellence in
-            every build.
-          </p>
-          <button class="btn btn-warning">Request a Quote</button>
-        </div>
-      </div>
-
-      <div class="box position-relative slide-3">
-        <div class="box-text w-50 position-absolute">
-          <h2 class="fs-1 text-white">
-            Engineering the Future with Confidence
-          </h2>
-          <p class="fs-4 text-white">
-            Our focus is on safe, sustainable, and smart construction services.
-          </p>
-          <button class="btn btn-warning">Request a Quote</button>
-        </div>
-      </div>
-
-      <div class="right-row position-absolute">
+      <div class="right-row position-absolute z-3">
         <i class="fa-solid fa-arrow-right"></i>
       </div>
     </section>
@@ -165,15 +170,29 @@
             </p>
           </div>
           <div class="col-lg-6 col-md-8 position-relative">
-            <div class="img-content position-relative">
+            <div class="img-content position-relative overflow-hidden">
               <div class="left-row position-absolute">
                 <i class="fa-solid fa-arrow-left"></i>
               </div>
-              <img
-                src="imgs/project-slide1.jpg"
-                class="img-fluid"
-                alt="Project"
-              />
+
+              <div class="project-track d-flex transition">
+                <img
+                  src="imgs/project-slide1.jpg"
+                  class="img-fluid"
+                  alt="Project"
+                />
+                <img
+                  src="imgs/project-slide2.jpg"
+                  class="img-fluid"
+                  alt="Project"
+                />
+                <img
+                  src="imgs/project-slide3.jpg"
+                  class="img-fluid"
+                  alt="Project"
+                />
+              </div>
+
               <div class="right-row position-absolute">
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
@@ -183,7 +202,6 @@
       </div>
     </section>
 
-    <!-- News Section -->
     <section class="news pt-5 pb-5">
       <div class="container">
         <div class="row text-center text-md-start">
@@ -584,7 +602,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mb-sm-5">
             <h3 class="text-white-50 mb-4">Get in Touch</h3>
             <p class="text-white-50">
               Subscribe to our newsletter for important updates, amazing offers,
@@ -606,11 +624,23 @@
           </div>
         </div>
       </div>
-      <div
-        class="copyright position-absolute w-100 d-flex justify-content-between"
-      >
-        <p class="ms-5 pt-3 text-white">© 2021 All rights reserved.</p>
-        <p class="me-5 pt-3 text-white">Terms & Conditions|Privacy Policy</p>
+      <div class="container border-top pt-3 mt-4">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <p class="mb-0 text-white-50">© 2025 All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              <a href="#" class="text-white-50 text-decoration-none me-2"
+                >Terms & Conditions</a
+              >
+              |
+              <a href="#" class="text-white-50 text-decoration-none ms-2"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- Scripts -->
